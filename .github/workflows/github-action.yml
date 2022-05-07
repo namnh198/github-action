@@ -1,0 +1,43 @@
+name: PHP Composer
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+  schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+      with:
+        token: '${{ secrets.GITHUB_TOKEN }}'
+
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v3
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+      
+    - name: Update README.md
+      run: php index.php
+    
+    - name: Commit README.md
+      run: |
+        git config user.email "namnhn98@gmail.com"
+        git config user.name "namnh198"
+        git add README.md
+        git commit -m "Update REAME.md" || echo "No changes to commit"
+        git push -u origin master
