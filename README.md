@@ -1,3 +1,6 @@
-**Sometimes you climb out of bed in the morning and you think, I'm not going to make it, but you laugh inside - remembering all the times you've felt that way.**
-
-*"Charles Bukowski"*
+Server error: `GET https://quotes.rest/qod?language=en` resulted in a `503 Service Unavailable` response:
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1 (truncated...)
