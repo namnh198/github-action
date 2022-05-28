@@ -1,3 +1,3 @@
-**The journey of a thousand miles begins with one step.**
+**Vision without action is daydream. Action without vision is nightmare..**
 
-*"Lao Tzu"*
+*"Japanese Proverb"*
