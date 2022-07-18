@@ -1,3 +1,6 @@
-**Successful people appear to be traveling along one continual, successful road. What is not apparent is the perseverance it takes following each defeat to keep you on that road. No one I know of has ever experienced one success after another without defeats, failures, disappointments, and frustrations galore along the way. Learning to overcome those times of agony is what separates the winners from the losers.**
-
-*"G. Kingsley Ward"*
+Server error: `GET https://quotes.rest/qod?language=en` resulted in a `503 Service Unavailable` response:
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1 (truncated...)
